@@ -5,36 +5,46 @@ var sass = require("gulp-sass");
 var del = require('del');
 var server = require("browser-sync").create();
 
+function refresh (done) {
+  server.reload();
+  done()
+};
 
-gulp.task('css', function () {
-  return gulp.src('source/sass/style.scss')
-  .pipe(sass())
-  .pipe(gulp.dest("build/css"))
-});
+function clean () {
+  return del("build")
+};
 
-gulp.task('html', function() {
+function html () {
   return gulp.src('source/*.html', {
     base: 'source'
   })
   .pipe(gulp.dest('build'))
-});
+};
 
-gulp.task('clean', function() {
-  return del("build")
-});
+function css () {
+  return gulp.src('source/sass/style.scss')
+  .pipe(sass())
+  .pipe(gulp.dest("build/css"))
+  .pipe(server.stream());
+};
 
-gulp.task('build', gulp.series (
-  'clean',
-  'css',
-  'html'
-));
+function watch () {
+  server.init({
+      server: {
+          baseDir: "build/"
+      },
+      tunnel: true
+  });
 
-gulp.task('qwe', function(){
-  console.log('seen');
-});
+  gulp.watch('source/*.html', gulp.series(html, refresh));
+  gulp.watch('source/sass/*.scss', css);
+};
 
-gulp.task('watch', function(){
-  gulp.watch('source/*.html', gulp.series('build'));
-  gulp.watch('source/sass/*.scss', gulp.series('build'));
+gulp.task('build',
+  gulp.series(clean,
+    gulp.parallel(css, html)
+  )
+);
 
-});
+gulp.task('watch', watch);
+gulp.task("start", gulp.series('build', watch));
