@@ -35,4 +35,6 @@ gulp.task('qwe', function(){
 
 gulp.task('watch', function(){
   gulp.watch('source/*.html', gulp.series('build'));
+  gulp.watch('source/sass/*.scss', gulp.series('build'));
+
 });
