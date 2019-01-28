@@ -1,5 +1,8 @@
-// @import "../../node_modules/normalize.css/normalize.css";
-
-body {
-  background: yellow;
-}
+@import "normalize.scss";
+@import "variables.scss";
+@import "fonts.scss";
+@import "mixins.scss";
+@import "pixel-glass.scss";
+@import "blocks/body.scss";
+@import "blocks/header.scss";
+@import "blocks/promo.scss";

@@ -14,8 +14,14 @@ function clean () {
   return del("build")
 };
 
-function html () {
-  return gulp.src('source/*.html', {
+function copy () {
+  return gulp.src([
+    'source/*.html',
+    'source/js/**',
+    'source/img/**',
+    'source/fonts/**',
+    "source/pp/**"
+   ], {
     base: 'source'
   })
   .pipe(gulp.dest('build'))
@@ -36,13 +42,13 @@ function watch () {
       tunnel: true
   });
 
-  gulp.watch('source/*.html', gulp.series(html, refresh));
-  gulp.watch('source/sass/*.scss', css);
+  gulp.watch('source/*.html', gulp.series(copy, refresh));
+  gulp.watch('source/sass/**/*.{scss,sass}', css);
 };
 
 gulp.task('build',
   gulp.series(clean,
-    gulp.parallel(css, html)
+    gulp.parallel(css, copy)
   )
 );
 
