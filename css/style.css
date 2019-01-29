@@ -305,11 +305,18 @@ template {
   display: none; }
 
 @font-face {
-  font-family: "San Francisco Text Light";
+  font-family: "SFUIText";
   font-style: normal;
   font-weight: 300;
   font-display: swap;
   src: local("San Francisco Text Light"), local("SFUI Text"), url("../fonts/SFUITextLight.woff2") format("woff2"), url("../fonts/SFUITextLight.woff") format("woff"); }
+
+@font-face {
+  font-family: "SFUIText";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local("San Francisco Text Light"), local("SFUI Text"), url("../fonts/SFUIText-Medium.woff2") format("woff2"), url("../fonts/SFUIText-Medium.woff") format("woff"); }
 
 @font-face {
   font-family: "Roboto";
@@ -435,7 +442,7 @@ body {
   margin: 0;
   padding: 0;
   min-width: 320px;
-  background: gray; }
+  background: url("../img/circle.svg") no-repeat -180px -55px; }
 
 * {
   box-sizing: border-box; }
@@ -467,7 +474,7 @@ img {
   margin-left: 2px; }
 
 .header__logo-text {
-  font-family: "San Francisco Text Light", "Arial", sans-serif;
+  font-family: "SFUIText", "Arial", sans-serif;
   font-size: 7px;
   line-height: 13.12px;
   font-weight: 300;
@@ -499,9 +506,11 @@ img {
     left: 0; }
 
 .promo {
-  background-color: #91aa59;
-  padding-top: 91px;
-  padding-left: 15px; }
+  padding-top: 91px; }
+
+.promo__wrapper {
+  width: 290px;
+  margin: 0 auto; }
 
 h1 {
   font-family: "Roboto", sans-serif;
@@ -512,4 +521,22 @@ h1 {
   text-transform: uppercase;
   margin: 0;
   width: 170px;
-  letter-spacing: 2.7px; }
+  letter-spacing: 2.4px;
+  margin-bottom: 21px; }
+
+.promo__timetable {
+  margin-bottom: 215px; }
+
+.button {
+  font-family: "SFUIText", "Arial", sans-serif;
+  font-size: 11px;
+  line-height: normal;
+  font-weight: 500;
+  color: #ffffff;
+  display: inline-block;
+  letter-spacing: 0.005px;
+  text-align: center;
+  border-radius: 35px;
+  border: 2px solid #ffffff;
+  text-decoration: none;
+  padding: 12px 14px; }
