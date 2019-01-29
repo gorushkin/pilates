@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "San Francisco Text Light";
+  font-family: "SFUIText";
   font-style: normal;
   font-weight: 300;
   font-display: swap;
@@ -7,6 +7,17 @@
     local("SFUI Text"),
     url("../fonts/SFUITextLight.woff2") format("woff2"),
     url("../fonts/SFUITextLight.woff") format("woff");
+}
+
+@font-face {
+  font-family: "SFUIText";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local("San Francisco Text Light"),
+    local("SFUI Text"),
+    url("../fonts/SFUIText-Medium.woff2") format("woff2"),
+    url("../fonts/SFUIText-Medium.woff") format("woff");
 }
 
 // @font-face {

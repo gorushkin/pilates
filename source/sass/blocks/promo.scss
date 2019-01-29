@@ -1,7 +1,14 @@
 .promo {
-  background-color: #91aa59;
+  // margin-top: -50px;
   padding-top: 91px;
-  padding-left: 15px;
+  // box-shadow: 0 0 0 3px red;
+  // background: url("../img/circle.svg") no-repeat -180px -55px;
+}
+
+.promo__wrapper {
+  width: 290px;
+  margin: 0 auto;
+  // box-shadow: 0 0 0 3px red;
 }
 
 h1 {
@@ -9,5 +16,10 @@ h1 {
   text-transform: uppercase;
   margin: 0;
   width: 170px;
-  letter-spacing: 2.7px;
+  letter-spacing: 2.4px;
+  margin-bottom: 21px;
+}
+
+.promo__timetable {
+  margin-bottom: 215px;
 }

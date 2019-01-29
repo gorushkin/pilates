@@ -4,6 +4,8 @@ var gulp = require("gulp");
 var sass = require("gulp-sass");
 var del = require('del');
 var server = require("browser-sync").create();
+var plumber = require("gulp-plumber");
+
 
 function refresh (done) {
   server.reload();
@@ -29,6 +31,7 @@ function copy () {
 
 function css () {
   return gulp.src('source/sass/style.scss')
+  .pipe(plumber())
   .pipe(sass())
   .pipe(gulp.dest("build/css"))
   .pipe(server.stream());
