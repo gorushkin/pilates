@@ -1,0 +1,7 @@
+.info__title {
+  margin-bottom: 30px;
+}
+
+.info__description {
+  @include main-font (14px, 300, normal, rgba(0, 0, 0, 0.87));
+}

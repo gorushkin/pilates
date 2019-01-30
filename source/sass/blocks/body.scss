@@ -2,7 +2,8 @@ body {
   margin: 0;
   padding: 0;
   min-width: 320px;
-  background: url("../img/circle.svg") no-repeat -180px -55px;
+  // background: url("../img/circle.svg") no-repeat -180px -55px;
+  background: url("../img/circle.svg") no-repeat 80% -55px;
 }
 
 * {
@@ -16,4 +17,29 @@ a {
 img {
   max-width: 100%;
   height: auto;
+}
+
+.wrapper {
+  max-width: 320px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.section-title {
+  @include second-font (18px, 500, 14.23px, rgba(0, 0, 0, 0.87));
+  margin: 0;
+  margin-left: 25px;
+  letter-spacing: -0.5px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 17px;
+    height: 1px;
+    background: #000000;
+    left: -26px;
+    top: 7px;
+  }
 }

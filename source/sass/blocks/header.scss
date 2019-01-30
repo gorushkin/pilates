@@ -1,10 +1,14 @@
 .header {
-  background-color: #91aa59;
+  // background-color: #91aa59;
   position: relative;
 }
 
 .header__wrapper {
-  width: 290px;
+  // box-shadow: 0 0 0 3px red;
+  // width: 290px;
+  max-width: 320px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin: 0 auto;
   padding-top: 14px;
   display: flex;
