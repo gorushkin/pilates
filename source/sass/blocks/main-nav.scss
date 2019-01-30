@@ -1,0 +1,50 @@
+.main-nav {
+  display: none;
+  min-height: 481px;
+  width: 100%;
+  background: #91aa59;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 95px;
+}
+
+.main-nav__close-button {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  background: #ffffff;
+  right: 25px;
+  top: 25px;
+  cursor: pointer;
+}
+
+.main-nav__list {
+  @include listreset;
+  width: 290px;
+  margin: 0 auto;
+}
+
+.main-nav__item {
+  // box-shadow: 0 0 0 3px red;
+  margin-left: 54px;
+}
+
+.main-nav__link {
+  @include second-font (18px, 700, 43.73px, #ffffff);
+  position: relative;
+
+
+  &:hover::before {
+    position: absolute;
+    content: "";
+    width: 9px;
+    height: 9px;
+    top: 8px;
+    border-radius: 50%;
+    left: -20px;
+    background: #ffffff;
+  }
+}

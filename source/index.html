@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/style.css">
-  <title>Document</title>
+  <title>Студия пилатеса</title>
   <!-- Pixel Glass -->
   <style>
     html {
@@ -26,11 +26,31 @@
         <img src="img/pilates-logo-for-panel.png" width="36" height="20" alt="" class="header__logo-image">
         <span class="header__logo-text">Pilates+</span>
       </a>
-      <div class="header__menu-toggle"></div>
+      <label class="header__button-wrapper" for="menu-toggle">
+        <div class="header__button"></div>
+      </label>
     </div>
-
+    <input class="header__menu-toggle" type="checkbox" id="menu-toggle">
     <nav class="header__nav main-nav">
-
+      <!-- <img src="img/menu_close_button.svg" width="22" height="21" alt="" class="main-nav__close-button"> -->
+      <label class="main-nav__close-button" for="menu-toggle"></label>
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a href="" class="main-nav__link">О пилатесе</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="" class="main-nav__link">Расписание и стоимость</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="" class="main-nav__link">Как проходят занятия</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="" class="main-nav__link">Отзывы</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="" class="main-nav__link">Контакты</a>
+        </li>
+      </ul>
     </nav>
   </header>
   <main>

@@ -1,5 +1,6 @@
 .header {
   background-color: #91aa59;
+  position: relative;
 }
 
 .header__wrapper {
@@ -27,7 +28,11 @@
   letter-spacing: 0.9px;
 }
 
-.header__menu-toggle {
+.header__button-wrapper {
+  cursor: pointer;
+}
+
+.header__button {
   margin-top: 14px;
   width: 17px;
   height: 2px;
@@ -54,3 +59,12 @@
     left: 0;
   }
 }
+
+.header__menu-toggle {
+  display: none;
+
+  &:checked + .header__nav {
+    display: block;
+  }
+}
+
