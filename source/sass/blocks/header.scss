@@ -1,11 +1,8 @@
 .header {
-  // background-color: #91aa59;
   position: relative;
 }
 
 .header__wrapper {
-  // box-shadow: 0 0 0 3px red;
-  // width: 290px;
   max-width: 320px;
   padding-left: 15px;
   padding-right: 15px;
@@ -37,31 +34,11 @@
 }
 
 .header__button {
-  margin-top: 14px;
+  padding: 14px;
   width: 17px;
-  height: 2px;
-  background: #ffffff;
+  height: 12px;
+  background: url("../img/burger.png") no-repeat 10px 9px;
   position: relative;
-
-  &::before {
-    content: "";
-    width: 10px;
-    height: 2px;
-    background: #ffffff;
-    position: absolute;
-    top: -5px;
-    left: 0;
-  }
-
-  &::after {
-    content: "";
-    width: 17px;
-    height: 2px;
-    background: #ffffff;
-    position: absolute;
-    top: 5px;
-    left: 0;
-  }
 }
 
 .header__menu-toggle {
@@ -71,4 +48,3 @@
     display: block;
   }
 }
-

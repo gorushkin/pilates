@@ -41,10 +41,11 @@ function watch () {
   server.init({
       server: {
           baseDir: "build/"
-      },
-      tunnel: true
+      }
   });
 
+  gulp.watch('source/fonts/*.*', gulp.series(copy, refresh));
+  gulp.watch('source/img/*.*', gulp.series(copy, refresh));
   gulp.watch('source/*.html', gulp.series(copy, refresh));
   gulp.watch('source/sass/**/*.{scss,sass}', css);
 };

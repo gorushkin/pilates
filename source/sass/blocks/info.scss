@@ -1,7 +1,36 @@
+.info {
+  background: url("../img/people_back.png") no-repeat 22px 184px;
+  min-height: 430px;
+}
+
 .info__title {
   margin-bottom: 30px;
 }
 
 .info__description {
-  @include main-font (14px, 300, normal, rgba(0, 0, 0, 0.87));
+  @include main-font (14px, 300, 17px, rgba(0, 0, 0, 0.87));
+  margin: 0;
+  margin-bottom: 8px;
+
+  &:last-of-type {
+    margin-bottom: 24px;
+  }
+}
+
+.info__show-more {
+  @include main-font (12px, 500, normal, #2a4f37);
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+  position: relative;
+  // margin-bottom: 85px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 6px;
+    height: 12px;
+    background: url("../img/arrow.png") no-repeat 50%;
+    top: 1px;
+    right: -16px;
+  }
 }

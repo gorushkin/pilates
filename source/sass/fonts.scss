@@ -1,12 +1,23 @@
 @font-face {
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Proxima Nova"),
+    local("Proxima Nova"),
+    url("../fonts/ProximaNova-Extrabld.woff2") format("woff2"),
+    url("../fonts/ProximaNova-Extrabld.woff") format("woff");
+}
+
+@font-face {
   font-family: "SFUIText";
   font-style: normal;
   font-weight: 300;
   font-display: swap;
   src: local("San Francisco Text Light"),
     local("SFUI Text"),
-    url("../fonts/SFUITextLight.woff2") format("woff2"),
-    url("../fonts/SFUITextLight.woff") format("woff");
+    url("../fonts/SFUIText-RegularG2.woff2") format("woff2"),
+    url("../fonts/SFUIText-RegularG2.woff") format("woff");
 }
 
 @font-face {
@@ -18,6 +29,17 @@
     local("SFUI Text"),
     url("../fonts/SFUIText-Medium.woff2") format("woff2"),
     url("../fonts/SFUIText-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "SFUIText";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local("San Francisco Text Light"),
+    local("SFUI Text"),
+    url("../fonts/SFUIText-BoldG2.woff2") format("woff2"),
+    url("../fonts/SFUIText-BoldG2.woff") format("woff");
 }
 
 @font-face {

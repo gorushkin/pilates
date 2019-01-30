@@ -1,0 +1,102 @@
+.timetable__title {
+  margin-bottom: 30px;
+}
+
+.grade-list {
+  @include listreset;
+}
+
+.level-card {
+  width: 244px;
+  background-color: #91aa59;
+  border-radius: 4px;
+  opacity: 0.5;
+  margin: 0 auto;
+  margin-bottom: 19px;
+  padding-left: 48px;
+  padding-top: 99px;
+  min-height: 371px;
+  position: relative;
+
+  &:nth-of-type(2) {
+    opacity: 0.7;
+  }
+
+  &:nth-of-type(3) {
+    opacity: 0.9;
+  }
+
+  &::after {
+    position: absolute;
+    content: "01";
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 115px;
+    color: #ffffff;
+    opacity: 0.1;
+    top: 20px;
+    left: 65px;
+  }
+
+  &:nth-of-type(2)::after {
+    content: "02";
+  }
+
+  &:nth-of-type(3)::after {
+    content: "03";
+  }
+}
+
+.level-card__info {
+  @include second-font (12px, 500, 12px, #ffffff);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0;
+  display: block;
+  margin-bottom: 1px;
+}
+
+.level-card__title {
+  @include second-font (18px, 500, 18px, #ffffff);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0;
+  margin-bottom: 18px;
+}
+
+.level-card__price {
+  @include main-font (16px, 700, 18px, #ffffff);
+  letter-spacing: -0.1px;
+  margin: 0;
+  margin-bottom: 22px;
+}
+
+.level-card__timetable-info {
+  @include main-font (16px, 500, 18px, #ffffff);
+  letter-spacing: -0.3px;
+  margin: 0;
+  margin-bottom: 13px;
+
+  &:last-of-type {
+    margin-bottom: 37px;
+  }
+}
+
+.level-card__make-order {
+  @include main-font (14px, 500, 18px, #ffffff);
+  letter-spacing: -0.3px;
+  text-align: center;
+  border-radius: 35px;
+  border: 2px solid #ffffff;
+  padding: 5px 24px;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    background: url("../img/button_arrow.png") no-repeat 50%;
+    width: 35px;
+    height: 12px;
+    top: 8px;
+    right: -21px;
+  }
+}
