@@ -1,3 +1,8 @@
+.lessons-info__wrapper {
+  width: 320px;
+  padding: 0;
+}
+
 .lessons-info__title {
   margin-bottom: 31px;
 }
@@ -11,11 +16,7 @@
   @include second-font (14px, 400, 12px, rgba(36, 36, 36, 0.87));
   text-align: center;
   margin: 0;
-  margin-bottom: 277px;
-
-  // &:nth-last-of-type(2) {
-  //   margin-bottom: 300px;
-  // }
+  margin-bottom: 276px;
 }
 
 .info-card__text {
@@ -25,3 +26,43 @@
   margin-bottom: 90px;
 }
 
+.info-card {
+  background: url("../img/lessons_1.png") no-repeat 50% 24px;
+}
+
+.info-card:nth-child(2) {
+  background: url("../img/lessons_2.png") no-repeat 38px -48px;
+
+  & .info-card__title {
+    margin-bottom: 295px;
+  }
+
+  & .info-card__text {
+    margin: 0 auto;
+    margin-bottom: 75px;
+    width: 300px;
+  }
+}
+
+.info-card:nth-child(3) {
+  background: url("../img/lessons_3.png") no-repeat 22px 64px;
+
+  & .info-card__title {
+    margin-bottom: 301px;
+  }
+
+  & .info-card__text {
+    width: 290px;
+    // box-shadow: 0 0 0 3px red;
+    margin: 0 auto;
+    margin-bottom: 79px;
+  }
+}
+
+.info-card:nth-child(4) {
+  background: url("../img/lessons_4.png") no-repeat 2px 69px;
+
+  & .info-card__title {
+    margin-bottom: 305px;
+  }
+}
