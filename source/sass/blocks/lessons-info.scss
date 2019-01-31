@@ -1,0 +1,27 @@
+.lessons-info__title {
+  margin-bottom: 31px;
+}
+
+.lessons-info__list {
+  @include listreset;
+}
+
+
+.info-card__title {
+  @include second-font (14px, 400, 12px, rgba(36, 36, 36, 0.87));
+  text-align: center;
+  margin: 0;
+  margin-bottom: 277px;
+
+  // &:nth-last-of-type(2) {
+  //   margin-bottom: 300px;
+  // }
+}
+
+.info-card__text {
+  @include main-font (14px, 300, 17px, rgba(1, 1, 1, 0.87));
+  text-align: center;
+  margin: 0;
+  margin-bottom: 90px;
+}
+
