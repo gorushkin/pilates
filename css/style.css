@@ -353,6 +353,13 @@ template {
   font-weight: 500;
   font-style: normal; }
 
+@font-face {
+  font-family: "Roboto";
+  font-display: swap;
+  src: url("../fonts/roboto-regular-webfont.woff2") format("woff2"), url("../fonts/roboto-regular-webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: normal; }
+
 /* stylelint-disable */
 /* STATES & MODES
 --------------------------------------------- */
@@ -667,6 +674,9 @@ img {
     top: 1px;
     right: -16px; }
 
+.timetable {
+  margin-bottom: 50px; }
+
 .timetable__title {
   margin-bottom: 30px; }
 
@@ -769,3 +779,94 @@ img {
     height: 12px;
     top: 8px;
     right: -21px; }
+
+.lessons-info__wrapper {
+  width: 320px;
+  padding: 0;
+  margin-bottom: 69px; }
+
+.lessons-info__title {
+  margin-bottom: 31px; }
+
+.lessons-info__list {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.info-card__title {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 12px;
+  font-weight: 400;
+  color: rgba(36, 36, 36, 0.87);
+  text-align: center;
+  margin: 0;
+  margin-bottom: 276px; }
+
+.info-card__text {
+  font-family: "SFUIText", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 300;
+  color: rgba(1, 1, 1, 0.87);
+  text-align: center;
+  margin: 0;
+  margin-bottom: 90px; }
+
+.info-card {
+  background: url("../img/lessons_1.png") no-repeat 50% 24px; }
+
+.info-card:nth-child(2) {
+  background: url("../img/lessons_2.png") no-repeat 38px -48px; }
+  .info-card:nth-child(2) .info-card__title {
+    margin-bottom: 295px; }
+  .info-card:nth-child(2) .info-card__text {
+    margin: 0 auto;
+    margin-bottom: 75px;
+    width: 300px; }
+
+.info-card:nth-child(3) {
+  background: url("../img/lessons_3.png") no-repeat 22px 64px; }
+  .info-card:nth-child(3) .info-card__title {
+    margin-bottom: 301px; }
+  .info-card:nth-child(3) .info-card__text {
+    width: 290px;
+    margin: 0 auto;
+    margin-bottom: 79px; }
+
+.info-card:nth-child(4) {
+  background: url("../img/lessons_4.png") no-repeat 2px 69px; }
+  .info-card:nth-child(4) .info-card__title {
+    margin-bottom: 305px; }
+  .info-card:nth-child(4) .info-card__text {
+    margin-bottom: 0; }
+
+.reviews__list {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.review {
+  width: 290px;
+  padding-top: 40px; }
+
+.review__author-image {
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 19px; }
+
+.review__author-name {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.87);
+  text-align: center;
+  display: block; }
+
+.review__author-age {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.87); }
