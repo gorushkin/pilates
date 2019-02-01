@@ -514,6 +514,18 @@ img {
     left: -26px;
     top: 7px; }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden; }
+
 .header {
   position: relative; }
 
@@ -848,12 +860,12 @@ img {
 
 .review {
   width: 290px;
-  padding-top: 40px; }
+  padding-top: 72px; }
 
 .review__author-image {
-  margin: 0 auto;
+  margin-left: 89px;
   display: block;
-  margin-bottom: 19px; }
+  margin-bottom: 16px; }
 
 .review__author-name {
   font-family: "Roboto", sans-serif;
@@ -861,12 +873,44 @@ img {
   line-height: 18px;
   font-weight: 400;
   color: rgba(0, 0, 0, 0.87);
-  text-align: center;
-  display: block; }
+  display: block;
+  margin-bottom: 9px;
+  margin-left: 61px;
+  letter-spacing: 0.2px; }
+
+.review__description {
+  display: flex;
+  margin-left: 78px;
+  margin-bottom: 19px; }
 
 .review__author-age {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
-  color: rgba(0, 0, 0, 0.87); }
+  color: rgba(0, 0, 0, 0.87);
+  margin-right: 27px; }
+
+.social {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex; }
+
+.social__link {
+  display: block;
+  width: 15px;
+  height: 15px;
+  background: black;
+  box-shadow: 0 0 0 3px green;
+  margin-right: 20px; }
+
+.review__text {
+  font-family: "SFUIText", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 300;
+  color: black;
+  margin: 0 auto;
+  text-align: center;
+  width: 260px; }
