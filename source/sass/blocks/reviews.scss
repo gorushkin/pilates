@@ -6,25 +6,54 @@
 .review {
   width: 290px;
   // box-shadow: 0 0 0 3px red;
-  padding-top: 40px;
+  padding-top: 72px;
 }
 
 .review__author-image {
-  margin: 0 auto;
+  // margin: 0 auto;
+  margin-left: 89px;
   display: block;
-  margin-bottom: 19px;
+  margin-bottom: 16px;
 }
 
 .review__author-name {
   @include second-font (16px, 400, 18px, rgba(0, 0, 0, 0.87));
-  text-align: center;
+  // text-align: center;
   display: block;
+  margin-bottom: 9px;
+  margin-left: 61px;
+  letter-spacing: 0.2px;
+}
+
+.review__description {
   // box-shadow: 0 0 0 3px red;
+  display: flex;
+  margin-left: 78px;
+  margin-bottom: 19px;
 }
 
 .review__author-age {
   @include second-font (14px, 400, 18px, rgba(0, 0, 0, 0.87));
-  // text-align: center;
-  // display: block;
-  // box-shadow: 0 0 0 3px red;
+  margin-right: 27px;
+}
+
+.social {
+  @include listreset;
+  display: flex;
+}
+
+.social__link {
+  display: block;
+  width: 15px;
+  height: 15px;
+  background: black;
+  box-shadow: 0 0 0 3px green;
+  margin-right: 20px;
+}
+
+.review__text {
+  @include main-font (14px, 300, 17px, rgb(0, 0, 0));
+  margin: 0 auto;
+  text-align: center;
+  width: 260px;
 }
