@@ -1,6 +1,7 @@
 .lessons-info__wrapper {
   width: 320px;
   padding: 0;
+  margin-bottom: 69px;
 }
 
 .lessons-info__title {
@@ -53,7 +54,6 @@
 
   & .info-card__text {
     width: 290px;
-    // box-shadow: 0 0 0 3px red;
     margin: 0 auto;
     margin-bottom: 79px;
   }
@@ -64,5 +64,9 @@
 
   & .info-card__title {
     margin-bottom: 305px;
+  }
+
+  & .info-card__text {
+    margin-bottom: 0;
   }
 }

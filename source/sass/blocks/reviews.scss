@@ -1,0 +1,30 @@
+.reviews__list {
+  @include listreset;
+}
+
+
+.review {
+  width: 290px;
+  // box-shadow: 0 0 0 3px red;
+  padding-top: 40px;
+}
+
+.review__author-image {
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 19px;
+}
+
+.review__author-name {
+  @include second-font (16px, 400, 18px, rgba(0, 0, 0, 0.87));
+  text-align: center;
+  display: block;
+  // box-shadow: 0 0 0 3px red;
+}
+
+.review__author-age {
+  @include second-font (14px, 400, 18px, rgba(0, 0, 0, 0.87));
+  // text-align: center;
+  // display: block;
+  // box-shadow: 0 0 0 3px red;
+}
