@@ -1,27 +1,35 @@
 .footer {
-  // min-height: 500px;
   background: #91aa59;
-  padding-top: 42px;
+  padding-top: 37px;
   display: flex;
   flex-direction: column;
+  max-width: 100%;
 }
 
 .footer__logo {
   margin: 0 auto;
-  display: block;
-  width: 40px;
+  display: flex;
+  flex-direction: column;
 }
 
 .footer__logo-image {
-  width: 40px;
-  height: 33px;
+  width: 44px;
+  height: 27px;
+  margin-bottom: 1px;
+  margin-left: 2px;
+}
+
+
+.footer__logo-text {
+  @include main-font (7px, 300, 13.12px, #fefefe);
+  text-transform: uppercase;
+  letter-spacing: 0.9px;
 }
 
 .footer__social-list {
   @include listreset;
   display: inline-flex;
   justify-content: space-between;
-  // box-shadow: 0 0 0 3px red;
   width: 75px;
   margin: 0 auto;
   margin-bottom: 35px;
@@ -31,7 +39,12 @@
   display: flex;
   width: 20px;
   height: 20px;
-  background: green;
+  align-items: center;
+  justify-content: center;
+
+  & path {
+    fill: #f1f4e9;
+  }
 }
 
 .footer__copyright {
@@ -40,13 +53,15 @@
   margin: 0 auto;
   position: relative;
   letter-spacing: 1.2px;
+  margin-bottom: 8px;
+
 
   &::after {
     content: "";
     position: absolute;
     width: 12px;
     height: 12px;
-    background: #000000;
+    background: url("../img/copyright.png") 50% no-repeat;
     right: 0;
     top: 3px;
   }

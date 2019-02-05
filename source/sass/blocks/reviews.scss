@@ -1,6 +1,4 @@
 .reviews {
-  // min-height: 500px;
-  // box-shadow: 0 0 0 3px red;
   margin-bottom: 67px;
 }
 
@@ -13,6 +11,8 @@
   width: 290px;
   padding-top: 72px;
   display: none;
+  box-shadow: 0 9px 23px 9px rgba(33, 33, 33, 0.04);
+  border-radius: 4px;
 }
 
 .reviews__toggle:checked + .review {
@@ -51,11 +51,17 @@
 
 .social__link {
   display: block;
-  width: 15px;
-  height: 15px;
-  background: black;
-  box-shadow: 0 0 0 3px green;
+  width: 20px;
+  height: 20px;
+  // background: black;
+  // box-shadow: 0 0 0 3px green;
   margin-right: 20px;
+}
+
+.social__link svg path {
+  // width: 20px;
+  // height: 20px;
+  fill: #808080;
 }
 
 .review__text {
