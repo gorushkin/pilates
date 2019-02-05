@@ -1,0 +1,33 @@
+.contacts {
+}
+
+.contacts__title {
+  margin-bottom: 25px;
+}
+
+.contacts__info {
+  // box-shadow: 0 0 0 3px red;
+  padding-left: 21px;
+}
+
+.contacts__field {
+  @include main-font (16px, 500, 22.61px, rgba(0, 0, 0, 0.87));
+  display: block;
+  margin-bottom: 4px;
+
+  &--smallmargin {
+    // box-shadow: 0 0 0 3px red;
+    margin-bottom: 6px;
+  }
+}
+
+.contacts__value {
+  @include main-font (14px, 300, 17px, rgba(0, 0, 0, 0.87));
+  display: block;
+  width: 120px;
+  margin-bottom: 19px;
+
+  &--bigmargin {
+    margin-bottom: 14px;
+  }
+}
