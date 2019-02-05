@@ -136,6 +136,7 @@
       <div class="reviews__wrapper wrapper">
         <h2 class="reviews__title section-title">Отзывы</h2>
         <ul class="reviews__list">
+          <input class="reviews__toggle visually-hidden" type="radio" id="review_1" name="toggle" checked>
           <li class="reviews__item review">
             <img src="img/user_1.png" alt="" class="review__author-image">
             <b class="review__author-name">Вероника Кулешова</b>
@@ -156,12 +157,57 @@
             </div>
             <p class="review__text">Хожу на пилатес уже пять месяцев. После десяти занятий уже увиделарезультат: тело подтянулось, улучшилась осанка, появился пресс.</p>
           </li>
+
+          <input class="reviews__toggle visually-hidden" type="radio" id="review_2" name="toggle">
+          <li class="reviews__item review">
+            <img src="img/user_1.png" alt="" class="review__author-image">
+            <b class="review__author-name">QWE</b>
+            <div class="review__description">
+              <b class="review__author-age">25 лет</b>
+              <ul class="review__social-list social">
+                <li class="social__item">
+                  <a href="" class="social__link">
+                    <span class="visually-hidden">Вконтакте</span>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="" class="social__link">
+                    <span class="visually-hidden">Инстаграм</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <p class="review__text">Хожу на пилатес уже пять месяцев. После десяти занятий уже увиделарезультат: тело подтянулось, улучшилась осанка, появился пресс.</p>
+          </li>
+
+          <input class="reviews__toggle visually-hidden" type="radio" id="review_3" name="toggle">
+          <li class="reviews__item review">
+            <img src="img/user_1.png" alt="" class="review__author-image">
+            <b class="review__author-name">RTY</b>
+            <div class="review__description">
+              <b class="review__author-age">25 лет</b>
+              <ul class="review__social-list social">
+                <li class="social__item">
+                  <a href="" class="social__link">
+                    <span class="visually-hidden">Вконтакте</span>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="" class="social__link">
+                    <span class="visually-hidden">Инстаграм</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <p class="review__text">Хожу на пилатес уже пять месяцев. После десяти занятий уже увиделарезультат: тело подтянулось, улучшилась осанка, появился пресс.</p>
+          </li>
+
         </ul>
         <div class="reviews__controls paginator">
           <ul class="paginator__list">
-            <li class="paginator__item"><a class="paginator__button paginator__button--active"></a></li>
-            <li class="paginator__item"><a class="paginator__button"></a></li>
-            <li class="paginator__item"><a class="paginator__button"></a></li>
+            <li class="paginator__item"><label class="paginator__button paginator__button--active" for="review_1"></label></li>
+            <li class="paginator__item"><label class="paginator__button" for="review_2"></label></li>
+            <li class="paginator__item"><label class="paginator__button" for="review_3"></label></li>
           </ul>
         </div>
       </div>

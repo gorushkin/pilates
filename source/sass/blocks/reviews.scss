@@ -9,10 +9,14 @@
   margin-bottom: 65px;
 }
 
-
 .review {
   width: 290px;
   padding-top: 72px;
+  display: none;
+}
+
+.reviews__toggle:checked + .review {
+  display: block;
 }
 
 .review__author-image {
