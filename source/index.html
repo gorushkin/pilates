@@ -264,13 +264,13 @@
   <section class="popup">
     <div class="popup__wrapper">
       <h2 class="popup__title">Хочешь записаться на занятие?</h2>
+      <button class="popup_close" type="button">Закрыть</button>
       <form action="https://echo.htmlacademy.ru" class="popup__form" method="POST">
         <input class="popup__input" type="tel" name="tel" placeholder="Телефон">
         <input class="popup__input" type="text" name="name" placeholder="Имя">
         <input class="popup__input" type="email" name="tel" placeholder="E-mail">
-        <label class="popup__consent-block">
-          <input class="popup__input visually-hidden" type="checkbox" name="consent">
-          Я согласен на обработку персональных данных</label>
+        <input class="popup__input visually-hidden" type="checkbox" name="consent" id="consent">
+        <label class="popup__consent-block" for="consent">Я согласен на обработку персональных данных</label>
         <button class="popup__send-button button" type="submit">Записаться</button>
       </form>
     </div>

@@ -29,6 +29,7 @@
   width: 207px;
   position: relative;
   margin-left: 50px;
+  cursor: pointer;
 
   &::before {
     position: absolute;
@@ -42,6 +43,11 @@
   }
 }
 
+.popup__input[type="checkbox"]:checked + .popup__consent-block::before {
+  background-image: url("../img/popup_consent_button.svg");
+}
+
 .popup__send-button {
   width: 171px;
+  background-color: #91aa59;
 }

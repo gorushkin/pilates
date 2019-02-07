@@ -85,22 +85,12 @@
   }
 }
 
-.button {
-  @include main-font (14px, 500, 18px, #ffffff);
-  letter-spacing: -0.3px;
-  text-align: center;
-  border-radius: 35px;
-  border: 2px solid #ffffff;
-  padding: 5px 24px;
-  position: relative;
-
-  &::after {
-    position: absolute;
-    content: "";
-    background: url("../img/button_arrow.png") no-repeat 50%;
-    width: 35px;
-    height: 12px;
-    top: 8px;
-    right: -21px;
-  }
+.level-card__make-order::after {
+  position: absolute;
+  content: "";
+  background: url("../img/button_arrow.png") no-repeat 50%;
+  width: 35px;
+  height: 12px;
+  top: 8px;
+  right: -21px;
 }
