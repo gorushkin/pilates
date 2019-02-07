@@ -4,6 +4,7 @@ body {
   min-width: 320px;
   background: url("../img/promo_back_girl.png") no-repeat 100% 141px,
     url("../img/circle.svg") no-repeat 80% -55px;
+  position: relative;
 }
 
 * {
@@ -68,4 +69,19 @@ img {
   border: 2px solid #ffffff;
   padding: 5px 24px;
   position: relative;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.8);
+  z-index: 5;
+  display: none;
+
+  &--show {
+    display: block;
+  }
 }
