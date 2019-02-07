@@ -771,7 +771,7 @@ img {
   .level-card__timetable-info:last-of-type {
     margin-bottom: 37px; }
 
-.level-card__make-order {
+.button {
   font-family: "SFUIText", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -783,7 +783,7 @@ img {
   border: 2px solid #ffffff;
   padding: 5px 24px;
   position: relative; }
-  .level-card__make-order::after {
+  .button::after {
     position: absolute;
     content: "";
     background: url("../img/button_arrow.png") no-repeat 50%;
@@ -1056,3 +1056,51 @@ img {
     background: url("../img/copyright.png") 50% no-repeat;
     right: 0;
     top: 3px; }
+
+.popup {
+  width: 290px;
+  box-shadow: 0 0 0 3px red;
+  margin: 0 auto; }
+
+.popup__title {
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.87);
+  font-weight: 400; }
+
+.popup__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.popup__input {
+  font-family: "SFUIText", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 13.12px;
+  font-weight: 300;
+  color: #111111;
+  border: none;
+  border-bottom: 2px solid #111111;
+  width: 171px; }
+
+.popup__consent-block {
+  font-family: "SFUIText", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 19.78px;
+  font-weight: 300;
+  color: #111111;
+  width: 207px;
+  position: relative;
+  margin-left: 50px; }
+  .popup__consent-block::before {
+    position: absolute;
+    content: "";
+    width: 21px;
+    height: 22px;
+    border: none;
+    background-color: #91aa59;
+    left: -20px;
+    top: 0; }
+
+.popup__send-button {
+  width: 171px; }
