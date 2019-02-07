@@ -8,11 +8,18 @@
   <title>Студия пилатеса</title>
   <!-- Pixel Glass -->
   <style>
+  html {
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-image: url("pp/1.mobile.jpg");
+  }
+
+  @media (min-width: 764px) {
     html {
-      background-repeat: no-repeat;
-      background-position: 50% 0;
-      background-image: url("pp/1.mobile_2.jpg");
+      /* Tablet layout */
+      background-image: url("pp/2.tablet.psd.png");
     }
+  }
   </style>
   <!-- <link href="style/styles.css" rel="stylesheet"> -->
   <script src="js/pixel-glass.js"></script>
@@ -29,6 +36,7 @@
       <label class="header__button-wrapper" for="menu-toggle">
         <div class="header__button"></div>
       </label>
+      <p class="header__phone-number">+7 918 365 06 07</p>
     </div>
     <input class="header__menu-toggle" type="checkbox" id="menu-toggle">
     <nav class="header__nav main-nav">

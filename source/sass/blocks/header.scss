@@ -48,3 +48,19 @@
     display: block;
   }
 }
+
+.header__phone-number {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .header {
+    min-width: 764px;
+  }
+
+  .header__wrapper {
+    max-width: none;
+    width: 641px;
+    background: red;
+  }
+}
