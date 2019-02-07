@@ -38,19 +38,19 @@
         </label>
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a href="" class="main-nav__link">О пилатесе</a>
+            <a href="#about" class="main-nav__link">О пилатесе</a>
           </li>
           <li class="main-nav__item">
-            <a href="" class="main-nav__link">Расписание и стоимость</a>
+            <a href="#timetable" class="main-nav__link">Расписание и стоимость</a>
           </li>
           <li class="main-nav__item">
-            <a href="" class="main-nav__link">Как проходят занятия</a>
+            <a href="#lessons" class="main-nav__link">Как проходят занятия</a>
           </li>
           <li class="main-nav__item">
-            <a href="" class="main-nav__link">Отзывы</a>
+            <a href="#reviews" class="main-nav__link">Отзывы</a>
           </li>
           <li class="main-nav__item">
-            <a href="" class="main-nav__link">Контакты</a>
+            <a href="#contacts" class="main-nav__link">Контакты</a>
           </li>
         </ul>
       </div>
@@ -66,7 +66,7 @@
     </section>
 
     <section class="info wrapper">
-      <h2 class="info__title section-title">О пилатесе</h2>
+      <h2 id="about" class="info__title section-title">О пилатесе</h2>
       <p class="info__description">Пилатес соединяет элементы растяжки с элементами силовой тренировки</p>
       <p class="info__description">Комплекс упражнений укрепляет мышцы пресса и спины, улучшает гибкость мышц и связок, подвижность суставов и избавляет от дискомфорта в позвоночнике</p>
       <a href="" class="info__show-more">Подробнее</a>
@@ -74,7 +74,7 @@
 
     <section class="timetable">
       <div class="timetable__wrapper wrapper">
-        <h2 class="timetable__title section-title">Расписание и стоимость</h2>
+        <h2 id="timetable" class="timetable__title section-title">Расписание и стоимость</h2>
           <ul class="timetable__list grade-list">
             <li class="grade-list__item level-card">
               <span class="level-card__info">Уровень</span>
@@ -110,7 +110,7 @@
 
     <section class="lessons-info">
       <div class="lessons-info__wrapper wrapper">
-        <h2 class="lessons-info__title section-title">Как проходят занятия</h2>
+        <h2 id="lessons" class="lessons-info__title section-title">Как проходят занятия</h2>
         <ul class="lessons-info__list">
           <li class="lessons-info__list-item info-card">
             <h3 class="info-card__title">Дыхательные техники</h3>
@@ -134,11 +134,36 @@
 
     <section class="reviews">
       <div class="reviews__wrapper wrapper">
-        <h2 class="reviews__title section-title">Отзывы</h2>
+        <h2 id="reviews" class="reviews__title section-title">Отзывы</h2>
         <ul class="reviews__list">
+          <input class="reviews__toggle visually-hidden" type="radio" id="review_1" name="toggle" checked>
           <li class="reviews__item review">
             <img src="img/user_1.png" alt="" class="review__author-image">
             <b class="review__author-name">Вероника Кулешова</b>
+            <div class="review__description">
+              <b class="review__author-age">25 лет</b>
+              <ul class="review__social-list social">
+                <li class="social__item">
+                  <a href="" class="social__link">
+                    <span class="visually-hidden">Вконтакте</span>
+                    <svg width="20" height="12" xmlns="http://www.w3.org/2000/svg"><path d="M17 8l2 2 1 1-1 1h-3l-1-1-2-1V9l-1 1v1l-1 1-4-1-3-3-4-6 1-1h3v1l2 3 1 1h1V5 2L7 1h4l1 1v4h1l2-3V2l1-1h3l1 1-1 2-2 2v2z" fill-rule="evenodd"/></svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="" class="social__link">
+                    <span class="visually-hidden">Инстаграм</span>
+                    <svg width="15" height="15" xmlns="http://www.w3.org/2000/svg"><path d="M2 0h11a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2zm9 2a1 1 0 0 0-1 0v2a1 1 0 0 0 1 1h2a1 1 0 0 0 0-1V2h-2zm2 4h-1a4 4 0 0 1 0 2c0 2-2 4-4 4s-5-2-5-4a4 4 0 0 1 0-2H2v7h11V6zM8 5C6 5 5 6 5 7s1 3 3 3 3-1 3-3-2-2-3-2z" fill-rule="evenodd"/></svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <p class="review__text">Хожу на пилатес уже пять месяцев. После десяти занятий уже увиделарезультат: тело подтянулось, улучшилась осанка, появился пресс.</p>
+          </li>
+
+          <input class="reviews__toggle visually-hidden" type="radio" id="review_2" name="toggle">
+          <li class="reviews__item review">
+            <img src="img/user_1.png" alt="" class="review__author-image">
+            <b class="review__author-name">QWE</b>
             <div class="review__description">
               <b class="review__author-age">25 лет</b>
               <ul class="review__social-list social">
@@ -156,54 +181,84 @@
             </div>
             <p class="review__text">Хожу на пилатес уже пять месяцев. После десяти занятий уже увиделарезультат: тело подтянулось, улучшилась осанка, появился пресс.</p>
           </li>
+
+          <input class="reviews__toggle visually-hidden" type="radio" id="review_3" name="toggle">
+          <li class="reviews__item review">
+            <img src="img/user_1.png" alt="" class="review__author-image">
+            <b class="review__author-name">RTY</b>
+            <div class="review__description">
+              <b class="review__author-age">25 лет</b>
+              <ul class="review__social-list social">
+                <li class="social__item">
+                  <a href="" class="social__link">
+                    <span class="visually-hidden">Вконтакте</span>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="" class="social__link">
+                    <span class="visually-hidden">Инстаграм</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <p class="review__text">Хожу на пилатес уже пять месяцев. После десяти занятий уже увиделарезультат: тело подтянулось, улучшилась осанка, появился пресс.</p>
+          </li>
+
         </ul>
         <div class="reviews__controls paginator">
           <ul class="paginator__list">
-            <li class="paginator__item"><span class="paginator__button">1</span></li>
-            <li class="paginator__item"><span class="paginator__button">2</span></li>
-            <li class="paginator__item"><span class="paginator__button">3</span></li>
+            <li class="paginator__item"><label class="paginator__button paginator__button--active" for="review_1"></label></li>
+            <li class="paginator__item"><label class="paginator__button" for="review_2"></label></li>
+            <li class="paginator__item"><label class="paginator__button" for="review_3"></label></li>
           </ul>
         </div>
       </div>
     </section>
 
-    <!-- <section class="contacts">
-      <h2 class="contacts__title">Контакты</h2>
-      <div class="contacts__info">
-        <b class="contacts__field">Адрес</b>
-        <b class="contacts__value">г. Кропоткин ул. Дугинец 10а</b>
-        <b class="contacts__field">Телефон</b>
-        <b class="contacts__value">+7 918 365 06 07</b>
-        <b class="contacts__field">E-mail</b>
-        <b class="contacts__value">pilatesplus@gmail.com</b>
+    <section class="contacts">
+      <div class="contacts__wrapper wrapper">
+        <h2 id="contacts" class="contacts__title section-title">Контакты</h2>
+        <div class="contacts__info">
+          <b class="contacts__field contacts__field--smallmargin">Адрес</b>
+          <b class="contacts__value">г. Кропоткин ул.&nbsp;Дугинец 10а</b>
+          <b class="contacts__field contacts__field">Телефон</b>
+          <b class="contacts__value contacts__value--bigmargin">+7 918 365 06 07</b>
+          <b class="contacts__field">E-mail</b>
+          <b class="contacts__value">pilatesplus@gmail.com</b>
+        </div>
       </div>
       <div class="contacts__map-wrapper">
-
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2799.807055131537!2d40.56813121575229!3d45.433390643519225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40fa466caee8345f%3A0x35b75298f6d78e58!2z0YPQuy4g0JTRg9Cz0LjQvdC10YYsIDEw0LAsINCa0YDQvtC_0L7RgtC60LjQvSwg0JrRgNCw0YHQvdC-0LTQsNGA0YHQutC40Lkg0LrRgNCw0LksIDM1MjM4MA!5e0!3m2!1sru!2sru!4v1549368575946" width="600" height="450" frameborder="0" allowfullscreen></iframe>
       </div>
-    </section> -->
+    </section>
   </main>
 
-  <!-- <footer class="main-footer">
-    <a href="" class="main-footer__logo">
-      <img src="" alt="" class="main-footer__logo-image">
+  <footer class="footer wrapper">
+    <a class="footer__logo">
+      <img src="img/pilates-logo-for-panel_footer.png" width="44" height="27" alt="" class="footer__logo-image">
+      <span class="footer__logo-text">Pilates+</span>
     </a>
-    <ul class="main-footer_social-list social">
-      <li class="social__item">
-        <a href="" class="social__link">
-          <span>Вконтакте</span>
+    <ul class="footer__social-list">
+      <li class="social-list__item">
+        <a href="" class="social-list__link">
+          <span class="visually-hidden">Вконтакте</span>
+          <svg width="20" height="12" xmlns="http://www.w3.org/2000/svg"><path d="M17 8l2 2 1 1-1 1h-3l-1-1-2-1V9l-1 1v1l-1 1-4-1-3-3-4-6 1-1h3v1l2 3 1 1h1V5 2L7 1h4l1 1v4h1l2-3V2l1-1h3l1 1-1 2-2 2v2z" fill-rule="evenodd"/></svg>
         </a>
       </li>
-      <li class="social__item">
-        <a href="" class="social__link">
-          <span>Facebook</span>
+      <li class="social-list__item">
+        <a href="" class="social-list__link">
+          <span class="visually-hidden">Facebook</span>
+          <svg width="8" height="15" xmlns="http://www.w3.org/2000/svg"><path d="M8 3H6L5 4v1h3v3H5v7H2V8H0V5h2V4c0-3 2-4 4-4h2v3z" fill-rule="evenodd"/></svg>
         </a>
       </li>
-      <li class="social__item">
-        <a href="" class="social__link">
-          <span>Instagram</span>
+      <li class="social-list__item">
+        <a href="" class="social-list__link">
+          <span class="visually-hidden">Instagram</span>
+          <svg width="15" height="15" xmlns="http://www.w3.org/2000/svg"><path d="M2 0h11a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2zm9 2a1 1 0 0 0-1 0v2a1 1 0 0 0 1 1h2a1 1 0 0 0 0-1V2h-2zm2 4h-1a4 4 0 0 1 0 2c0 2-2 4-4 4s-5-2-5-4a4 4 0 0 1 0-2H2v7h11V6zM8 5C6 5 5 6 5 7s1 3 3 3 3-1 3-3-2-2-3-2z" fill-rule="evenodd"/></svg>
         </a>
       </li>
     </ul>
-  </footer> -->
+    <p class="footer__copyright">Pilates Plus, 2017 </p>
+  </footer>
 </body>
 </html>
