@@ -10,6 +10,17 @@
 }
 
 @font-face {
+  font-family: "Proxima Nova Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Proxima Nova"),
+    local("Proxima Nova"),
+    url("../fonts/ProximaNova-RegularCondensed.woff2") format("woff2"),
+    url("../fonts/ProximaNova-RegularCondensed.woff") format("woff");
+}
+
+@font-face {
   font-family: "SFUIText";
   font-style: normal;
   font-weight: 300;
