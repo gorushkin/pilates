@@ -1,0 +1,47 @@
+.popup {
+  width: 290px;
+  box-shadow: 0 0 0 3px red;
+  margin: 0 auto;
+}
+
+.popup__title {
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.87);
+  font-weight: 400;
+}
+
+.popup__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.popup__input {
+  @include main-font (14px, 300, 13.12px, #111111);
+  border: none;
+  border-bottom: 2px solid #111111;
+  width: 171px;
+}
+
+.popup__consent-block {
+  @include main-font (14px, 300, 19.78px, #111111);
+  width: 207px;
+  position: relative;
+  margin-left: 50px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 21px;
+    height: 22px;
+    border: none;
+    background-color: #91aa59;
+    left: -20px;
+    top: 0;
+  }
+}
+
+.popup__send-button {
+  width: 171px;
+}
