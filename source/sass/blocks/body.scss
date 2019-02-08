@@ -2,18 +2,18 @@ body {
   margin: 0;
   padding: 0;
   min-width: 320px;
-  background: url("../img/promo_back_girl.png") no-repeat 100% 141px,
-    url("../img/circle.svg") no-repeat 80% -55px;
+  // background: url("../img/promo_back_girl.png") no-repeat 100% 141px,
+  //   url("../img/circle.svg") no-repeat 80% -55px;
   position: relative;
 }
 
 
-@media (min-width: 470px) {
-  body {
-    background: url("../img/promo_back_girl.png") no-repeat 100% 141px,
-      url("../img/circle.svg") no-repeat -66px -55px;
-  }
-}
+// @media (min-width: 470px) {
+//   body {
+//     background: url("../img/promo_back_girl.png") no-repeat 100% 141px,
+//       url("../img/circle.svg") no-repeat -66px -55px;
+//   }
+// }
 
 * {
   box-sizing: border-box;

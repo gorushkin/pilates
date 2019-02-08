@@ -1,5 +1,14 @@
 .header {
+  background: url("../img/promo_back_girl.png") no-repeat 100% 141px,
+    url("../img/circle.svg") no-repeat 80% -55px;
   position: relative;
+}
+
+@media (min-width: 470px) {
+  .header {
+    background: url("../img/promo_back_girl.png") no-repeat 100% 141px,
+      url("../img/circle.svg") no-repeat -66px -55px;
+  }
 }
 
 .header__wrapper {
