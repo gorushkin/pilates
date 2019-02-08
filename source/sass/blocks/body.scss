@@ -93,3 +93,13 @@ img {
     display: block;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .wrapper {
+    max-width: none;
+    width: 764px;
+    padding-left: 62px;
+    padding-right: 61px;
+    // min-width: 764px;
+  }
+}

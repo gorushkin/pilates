@@ -19,6 +19,10 @@
   margin-bottom: 21px;
 }
 
+.promo__text {
+  display: none;
+}
+
 .promo__timetable {
   @include main-font (11px, 500, normal, #ffffff);
   display: inline-block;
@@ -29,4 +33,25 @@
   text-decoration: none;
   padding: 12px 14px;
   margin-bottom: 215px;
+}
+
+@media (min-width: $tablet-width) {
+  .promo {
+    padding-top: 115px;
+  }
+
+  .promo__title {
+    font-size: 48px;
+    // box-shadow: 0 0 0 3px red;
+    line-height: 58px;
+    width: 270px;
+    letter-spacing: 3px;
+    margin-bottom: 43px;
+  }
+
+  .promo__text {
+    @include main-font (18px, 300, normal, #ffffff);
+    display: block;
+    letter-spacing: -0.3px;
+  }
 }

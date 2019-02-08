@@ -65,11 +65,43 @@
 @media (min-width: $tablet-width) {
   .header {
     min-width: 764px;
+    background: #91aa59;
+    padding-top: 11px;
   }
 
   .header__wrapper {
     max-width: none;
     width: 641px;
-    background: red;
+    padding: 0;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .header__logo {
+    width: 58px;
+    padding-top: 11px;
+    margin-right: 240px;
+  }
+
+  .header__logo-image {
+    width: 50px;
+    height: 28px;
+  }
+
+  .header__logo-text {
+    @include main-font (10px, 300, 17.8px, #fefefe);
+  }
+
+  .header__phone-number {
+    @include main-font (14px, 700, 18px, rgba(0, 0, 0, 0.87));
+    margin: 0;
+    display: block;
+    margin-left: auto;
+  }
+
+  .header__button {
+    width: 46px;
+    height: 46px;
+    background: black;
   }
 }
